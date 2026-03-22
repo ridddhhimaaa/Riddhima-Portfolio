@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Riddhima Rai — Data Science Enthusiast & Full-Stack Developer. Portfolio showcasing projects in ML, data analysis, and web development.">
+    <meta name="author" content="Riddhima Rai">
+    <meta name="keywords" content="Riddhima Rai, portfolio, data science, machine learning, Django, Python, developer">
+    <title>Riddhima Rai | Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <!-- ===== NAVIGATION BAR ===== -->
+    <nav class="navbar" id="main-nav">
+        <ul class="nav-pills">
+            <li class="nav-pill active" data-slide="0">
+                <span class="pill-icon">🏠</span>
+                <span class="pill-text">Home</span>
+            </li>
+            <li class="nav-pill" data-slide="1">
+                <span class="pill-icon">⚡</span>
+                <span class="pill-text">Skills</span>
+            </li>
+            <li class="nav-pill" data-slide="2">
+                <span class="pill-icon">🚀</span>
+                <span class="pill-text">Projects</span>
+            </li>
+            <li class="nav-pill" data-slide="3">
+                <span class="pill-icon">🎓</span>
+                <span class="pill-text">Experience</span>
+            </li>
+            <li class="nav-pill" data-slide="4">
+                <span class="pill-icon">✉️</span>
+                <span class="pill-text">Contact</span>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ===== SLIDES WRAPPER ===== -->
+    <div class="slides-wrapper" id="slidesWrapper">
+
+        {% include 'sections/home.html' %}
+        {% include 'sections/skills.html' %}
+        {% include 'sections/projects.html' %}
+        {% include 'sections/experience.html' %}
+        {% include 'sections/contact.html' %}
+
+    </div>
+
+    <!-- ===== BOTTOM DOT INDICATORS ===== -->
+    <div class="slide-dots" id="slideDots">
+        <div class="slide-dot active" data-slide="0"></div>
+        <div class="slide-dot" data-slide="1"></div>
+        <div class="slide-dot" data-slide="2"></div>
+        <div class="slide-dot" data-slide="3"></div>
+        <div class="slide-dot" data-slide="4"></div>
+    </div>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
