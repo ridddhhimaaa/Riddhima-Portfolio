@@ -1,3 +1,4 @@
+{% load static %}
 <!-- ===== SECTION 3: PROJECTS ===== -->
 <div class="slide" id="slide-projects">
     <div class="bg-orb bg-orb-2"></div>
@@ -12,59 +13,74 @@
 
             <!-- Project 1 -->
             <div class="project-card fade-up">
-                <div class="project-header">
-                    <h3 class="project-title">
-                        Predictive Analytics Studio
-                        <span class="project-badge">Ongoing</span>
-                    </h3>
-                    <span class="project-date">Feb 2026</span>
+                <div class="project-visual">
+                    <img src="{% static 'img/ml_dashboard.png' %}" alt="Machine Learning Dashboard" class="project-img">
                 </div>
-                <p class="project-subtitle">Full-Stack ML System · Model Evaluation</p>
-                <ul class="project-bullets">
-                    <li>Built full-stack ML platform using Django for regression, classification, clustering.</li>
-                    <li>Enabled real-time parameter tuning, model comparison, and visualization.</li>
-                    <li>Integrated preprocessing, training, evaluation, and cross-validation pipeline.</li>
-                </ul>
-                <a href="https://github.com/ridddhhimaaa/Predictive-analytics-studio" target="_blank" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                    View on GitHub
-                </a>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3 class="project-title">
+                            Predictive Analytics Studio
+                            <span class="project-badge">Ongoing</span>
+                        </h3>
+                        <span class="project-date">Feb 2026</span>
+                    </div>
+                    <p class="project-subtitle">Full-Stack ML System · Model Evaluation</p>
+                    <ul class="project-bullets">
+                        <li>Built Django ML platform for regression & clustering.</li>
+                        <li>Enabled real-time parameter tuning and data visualization.</li>
+                        <li>Integrated full preprocessing and cross-validation pipelines.</li>
+                    </ul>
+                    <a href="https://github.com/ridddhhimaaa/Predictive-analytics-studio" target="_blank" class="project-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        View on GitHub
+                    </a>
+                </div>
             </div>
 
             <!-- Project 2 -->
-            <div class="project-card fade-up">
-                <div class="project-header">
-                    <h3 class="project-title">Password Strength Analysis & Security Risk Scoring</h3>
-                    <span class="project-date">Jan 2026</span>
+            <div class="project-card fade-up" style="transition-delay: 0.1s;">
+                <div class="project-visual">
+                    <img src="{% static 'img/git_workflow.png' %}" alt="Git Workflow Security Analyzer" class="project-img">
                 </div>
-                <p class="project-subtitle">Feature Engineering · Predictive Modeling</p>
-                <ul class="project-bullets">
-                    <li>Built Java-based password strength analyzer using feature engineering (length, entropy, character types).</li>
-                    <li>Performed EDA and trained Decision Tree model for password classification.</li>
-                    <li>Combined rule-based scoring with ML prediction; integrated Git-based workflow.</li>
-                </ul>
-                <a href="https://github.com/ridddhhimaaa/Password-Strength-Analysis-Security-Risk-Scoring-System" target="_blank" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                    View on GitHub
-                </a>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3 class="project-title">Password Strength & Risk Analyzer</h3>
+                        <span class="project-date">Jan 2026</span>
+                    </div>
+                    <p class="project-subtitle">Feature Engineering · Predictive Modeling</p>
+                    <ul class="project-bullets">
+                        <li>Built Java analyzer with custom feature engineering.</li>
+                        <li>Trained Decision Tree model for risk classification.</li>
+                        <li>Combined ML predictions with accurate rule-based scoring.</li>
+                    </ul>
+                    <a href="https://github.com/ridddhhimaaa/Password-Strength-Analysis-Security-Risk-Scoring-System" target="_blank" class="project-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        View on GitHub
+                    </a>
+                </div>
             </div>
 
             <!-- Project 3 -->
-            <div class="project-card fade-up">
-                <div class="project-header">
-                    <h3 class="project-title">LA Crime Intelligence Dashboard (2020–2025)</h3>
-                    <span class="project-date">Dec 2025</span>
+            <div class="project-card fade-up" style="transition-delay: 0.2s;">
+                <div class="project-visual">
+                    <img src="{% static 'img/power_bi_dashboard.png' %}" alt="Power BI Dashboard" class="project-img">
                 </div>
-                <p class="project-subtitle">Power BI · Data Visualization · DAX Analysis</p>
-                <ul class="project-bullets">
-                    <li>Designed Power BI dashboard using star schema, Power Query ETL, and DAX.</li>
-                    <li>Analyzed crime trends, victim demographics, and geospatial patterns.</li>
-                    <li>Built interactive dashboards for insights on case outcomes and time-based trends.</li>
-                </ul>
-                <a href="https://github.com/ridddhhimaaa/LA-Crime-Intelligence-Dashboard" target="_blank" class="project-link">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                    View on GitHub
-                </a>
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3 class="project-title">LA Crime Intelligence Dashboard</h3>
+                        <span class="project-date">Dec 2025</span>
+                    </div>
+                    <p class="project-subtitle">Power BI · DAX · Data Visualization</p>
+                    <ul class="project-bullets">
+                        <li>Designed Power BI dashboard with star schema and DAX models.</li>
+                        <li>Analyzed crime trends, victims, and geospatial distributions.</li>
+                        <li>Built interactive visualizations for time-based case tracking.</li>
+                    </ul>
+                    <a href="https://github.com/ridddhhimaaa/LA-Crime-Intelligence-Dashboard" target="_blank" class="project-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        View on GitHub
+                    </a>
+                </div>
             </div>
 
         </div>

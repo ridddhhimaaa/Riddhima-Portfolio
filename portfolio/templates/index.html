@@ -8,7 +8,7 @@
     <meta name="author" content="Riddhima Rai">
     <meta name="keywords" content="Riddhima Rai, portfolio, data science, machine learning, Django, Python, developer">
     <title>Riddhima Rai | Portfolio</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=2">
 </head>
 <body>
 
@@ -16,27 +16,34 @@
     <nav class="navbar" id="main-nav">
         <ul class="nav-pills">
             <li class="nav-pill active" data-slide="0">
-                <span class="pill-icon">🏠</span>
                 <span class="pill-text">Home</span>
             </li>
             <li class="nav-pill" data-slide="1">
-                <span class="pill-icon">⚡</span>
                 <span class="pill-text">Skills</span>
             </li>
             <li class="nav-pill" data-slide="2">
-                <span class="pill-icon">🚀</span>
                 <span class="pill-text">Projects</span>
             </li>
             <li class="nav-pill" data-slide="3">
-                <span class="pill-icon">🎓</span>
-                <span class="pill-text">Experience</span>
+                <span class="pill-text">Education</span>
             </li>
             <li class="nav-pill" data-slide="4">
-                <span class="pill-icon">✉️</span>
+                <span class="pill-text">Certificates</span>
+            </li>
+            <li class="nav-pill" data-slide="5">
+                <span class="pill-text">Training</span>
+            </li>
+            <li class="nav-pill" data-slide="6">
+                <span class="pill-text">Achievements</span>
+            </li>
+            <li class="nav-pill" data-slide="7">
                 <span class="pill-text">Contact</span>
             </li>
         </ul>
     </nav>
+
+    <!-- ===== PARTICLES ===== -->
+    <div id="particles-js"></div>
 
     <!-- ===== SLIDES WRAPPER ===== -->
     <div class="slides-wrapper" id="slidesWrapper">
@@ -44,7 +51,10 @@
         {% include 'sections/home.html' %}
         {% include 'sections/skills.html' %}
         {% include 'sections/projects.html' %}
-        {% include 'sections/experience.html' %}
+        {% include 'sections/education.html' %}
+        {% include 'sections/certificates.html' %}
+        {% include 'sections/training.html' %}
+        {% include 'sections/achievements.html' %}
         {% include 'sections/contact.html' %}
 
     </div>
@@ -56,8 +66,106 @@
         <div class="slide-dot" data-slide="2"></div>
         <div class="slide-dot" data-slide="3"></div>
         <div class="slide-dot" data-slide="4"></div>
+        <div class="slide-dot" data-slide="5"></div>
+        <div class="slide-dot" data-slide="6"></div>
+        <div class="slide-dot" data-slide="7"></div>
     </div>
 
-    <script src="{% static 'js/main.js' %}"></script>
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 50,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#1db954"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#1db954",
+                    "opacity": 0.2,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "window",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 0.5
+                        }
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+    <script src="{% static 'js/main.js' %}?v=2"></script>
 </body>
 </html>
