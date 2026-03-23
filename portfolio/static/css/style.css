@@ -591,7 +591,7 @@ body {
 }
 
 .summary-text-full {
-    font-size: 1.12rem;
+    font-size: 1.15rem;
     line-height: 1.8;
     color: var(--text-secondary);
 }
@@ -684,19 +684,19 @@ body {
 }
 
 .feature-label {
-    font-size: 0.8rem;
+    font-size: 0.72rem;
     color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 700;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 .feature-value {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     color: var(--text-primary);
     font-weight: 500;
-    line-height: 1.45;
+    line-height: 1.5;
 }
 
 
