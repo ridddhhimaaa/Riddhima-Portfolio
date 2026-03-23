@@ -684,19 +684,19 @@ body {
 }
 
 .feature-label {
-    font-size: 0.72rem;
+    font-size: 0.8rem;
     color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 700;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
 }
 
 .feature-value {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     color: var(--text-primary);
     font-weight: 500;
-    line-height: 1.4;
+    line-height: 1.45;
 }
 
 
