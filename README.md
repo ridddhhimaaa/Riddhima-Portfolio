@@ -198,9 +198,8 @@ vercel --prod
 B.Tech CSE — Lovely Professional University
 
 - Email: riddhima.rai23@lpu.in
-- LinkedIn: riddhima-rai
-- GitHub: ridddhhimaaa
-- Phone: +91-7393946111
+- LinkedIn: https://www.linkedin.com/in/riddhima-rai-120737291/ 
+- GitHub: https://github.com/ridddhhimaaa
 
 ---
 
